@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 // ✅ Backend base URL from Vercel environment variable
-const API_BASE = process.env.REACT_APP_API_URL;
+const API_BASE =
+  process.env.REACT_APP_API_URL ||
+  "http://localhost:5000";
 
 // ❌ Safety check (helps debugging if env is missing)
 if (!API_BASE) {
@@ -12,8 +14,8 @@ if (!API_BASE) {
 const api = axios.create({
   baseURL: `${API_BASE}/api`,
   headers: {
-    "Content-Type": "application/json"
-  }
+    "Content-Type": "application/json",
+  },
 });
 
 // ✅ Attach JWT token to every request
