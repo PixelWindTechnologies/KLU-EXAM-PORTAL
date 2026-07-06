@@ -6,7 +6,7 @@ import {
   FiChevronRight, FiChevronsRight, FiChevronsLeft, FiShield
 } from 'react-icons/fi';
 
-const EXAM_DURATION = 5 * 60;
+const EXAM_DURATION = 60 * 60;
 const MAX_WARNINGS  = 3;
 const ALERT_AT      = 5 * 60;
 
