@@ -6,8 +6,8 @@ import {
   FiChevronRight, FiChevronsRight, FiChevronsLeft, FiShield
 } from 'react-icons/fi';
 
-const EXAM_DURATION = 10 * 60;
-const MAX_WARNINGS  = 1;
+const EXAM_DURATION = 5 * 60;
+const MAX_WARNINGS  = 3;
 const ALERT_AT      = 5 * 60;
 
 function playBeep(frequency = 880, duration = 0.6, volume = 0.6) {
