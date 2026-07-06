@@ -17,9 +17,9 @@ export default function DashboardPage() {
   const isTerminated = user?.examStatus === 'terminated';
 
   const instructions = [
-    { icon: <FiClock size={17} />, text: 'Exam duration is 40 minutes. The timer begins the moment you click Start Exam.' },
+    { icon: <FiClock size={17} />, text: 'Exam duration is 60 minutes. The timer begins the moment you click Start Exam.' },
     { icon: <FiZap size={17} />, text: 'Questions are uniquely randomized — every student receives a different sequence.' },
-    { icon: <FiAlertTriangle size={17} />, text: 'Switching tabs or minimizing the browser window triggers a warning. 3 violations result in automatic termination.' },
+    { icon: <FiAlertTriangle size={17} />, text: 'Switching tabs or minimizing the browser window triggers a warning. 1 violation result in automatic termination.' },
     { icon: <FiSlash size={17} />, text: 'Right-click, copy, and paste are disabled throughout the exam session.' },
     { icon: <FiMonitor size={17} />, text: 'Fullscreen mode is enforced. Exiting fullscreen counts as a violation.' },
     { icon: <FiCheckSquare size={17} />, text: 'The exam auto-submits when the timer expires. You may also submit manually.' },
@@ -84,7 +84,7 @@ export default function DashboardPage() {
           {[
             { icon: <FiUser size={18} />, label: 'Student Name', value: user?.name, color: 'var(--accent)' },
             { icon: <FiHash size={18} />, label: 'Roll Number', value: user?.rollNumber, color: '#0891b2' },
-            { icon: <FiClock size={18} />, label: 'Exam Duration', value: '40 Minutes', color: '#d97706' },
+            { icon: <FiClock size={18} />, label: 'Exam Duration', value: '60 Minutes', color: '#d97706' },
             { icon: <FiCheckSquare size={18} />, label: 'Exam Status', value: <span className={`badge ${statusInfo.cls}`}>{statusInfo.label}</span>, color: '#16a34a' },
           ].map((item, i) => (
             <div key={i} className="card" style={{ padding: '18px 20px' }}>
