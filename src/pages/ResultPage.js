@@ -33,7 +33,7 @@ export default function ResultPage() {
   const statusLabels = {
     completed: { label: 'Completed', cls: 'badge-green' },
     terminated: { label: 'Terminated', cls: 'badge-red' },
-    time_expired: { label: 'Time Expired', cls: 'badge-yellow' },
+    time_expired: { label: 'Automatically Submitted', cls: 'badge-yellow' },
   };
   const statusInfo = statusLabels[result?.examStatus] || statusLabels.completed;
 
