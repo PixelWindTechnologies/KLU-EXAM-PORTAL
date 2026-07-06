@@ -60,9 +60,9 @@ export default function LoginPage() {
         <div style={{ marginTop: 56, padding: '20px 24px', background: 'rgba(255,255,255,0.1)', borderRadius: 12, backdropFilter: 'blur(10px)' }}>
           <div style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: 8 }}>Exam Details</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, fontSize: '0.82rem', opacity: 0.9 }}>
-            <div>Duration: <strong>40 Minutes</strong></div>
-            <div>Total Questions: <strong>40</strong></div>
-            <div>Topics: <strong>HTML, CSS, Digital Marketing</strong></div>
+            <div>Duration: <strong>60 Minutes</strong></div>
+            <div>Total Questions: <strong>100</strong></div>
+            <div>Topics: <strong>Python, Data Analytics, Gen-AI, AI&ML </strong></div>
           </div>
         </div>
       </div>
